@@ -1,0 +1,103 @@
+/* import a css file which contains main style of heading and paragraph */
+@import "blog_detail_hp.css";
+
+@media(min-width:1100px) {
+.container {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 100px minmax(230px, 2fr) 50px;
+    grid-template-areas:
+    "hd hd hd hd hd hd hd hd hd"
+    "main main main main main main main feat feat"
+    "ft ft ft ft ft ft ft ft ft";
+    width: 100%;
+    font-family: sans-serif, serif, monospace, cursive, math;
+  }
+}
+
+.header {
+    grid-area: hd;
+    padding: 5px 5px;
+}
+
+.content {
+    grid-area: main;
+    margin: 15px 5px 5px 15px;
+    padding: 5px 5px;
+}
+
+.ResumeDetail {
+    display: flex;
+    flex-direction: row;
+}
+
+.feature {
+    grid-template-rows: auto;
+    grid-area: feat;
+    margin: 5px 5px;
+    padding: 20px 10px;
+    box-shadow: 0px 5px 15px 0px rgba(153,153,153,0.5);
+    height: 480px;
+}
+
+.IDfig {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    width: 150px;
+    margin: auto;
+}
+
+.IDfig img {
+    width: 150px;
+    height: 211px;
+}
+
+.IDfig figcaption {
+    background-color: #333;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+.ContactMe h3 {
+    padding: 20px 40px;
+}
+
+.ContactMe img {
+    max-width: 18px;
+    max-height: 18px;
+}
+
+.ContactMe ul {
+    list-style-type: none;
+    margin-top: 0px;
+    /* padding: top right bottom left; */
+    padding: 20px 0px 0px 45px;
+    width: 60%;
+    overflow: hidden;
+}
+
+.ContactMe li {
+    display: block;
+    text-align: left;
+    padding: 8px;
+    text-decoration: none;
+}
+
+.ContactMe li:hover {
+    background-color: #53CBED;
+    color: white;
+}
+
+.footer {
+    grid-area: ft;
+    padding: 40px 12px;
+}
+
+/* If Screen Is A Little Bit Narrow */
+@import "blog_detail_ipad.css";
+
+@import "blog_detail_mobile.css";

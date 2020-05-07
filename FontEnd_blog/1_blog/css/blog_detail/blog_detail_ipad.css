@@ -1,0 +1,21 @@
+@media(min-width:450px) and (max-width:1100px) {
+.container {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 100px minmax(230px, 2fr) 50px;
+    grid-template-areas:
+    "hd hd hd hd hd hd hd hd hd"
+    "main main main main main main main feat feat"
+    "ft ft ft ft ft ft ft ft ft";
+    width: 100%;
+    font-family: sans-serif, serif, monospace, cursive, math;
+  }
+
+.ContactMe ul {
+    padding: 20px 20px;
+  }
+
+.ContactMe h3 {
+      padding: 20px 20px;
+  }
+}

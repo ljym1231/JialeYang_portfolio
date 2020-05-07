@@ -1,0 +1,42 @@
+.header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.header li {
+    float: left;
+    border-right: 2px solid grey;
+}
+
+.header li:last-child {
+    border-right: none;
+}
+
+.header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 30px;
+    text-decoration: none;
+}
+
+.header li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* If Screen Is A Little Bit Narrow */
+@media(max-width:450px) {
+.header li {
+    float: none;
+    border: none;
+  }
+}
